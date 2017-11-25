@@ -6,98 +6,141 @@ message = raw_input("Digite a mensagem de até 255 caracteres: ")
 if len(message) > 255:
     print("Mensagem maior que 255 caracteres")
 else:
-    result = []
+    result = ""
     # começa a montar o array
-    for n in range(len(message)):
+    for n in message:
 
-        if message[n] == "A" or message[n] == "a":
-            result.append(2)
-            if message[n+1] == null:
-                break;
-
-            if message[n+1] == "B" or message[n+1] == "b" or message[n+1] == "C" or message[n+1] == "c":
-                result.append("_")
+        if n == "A" or n == "a":
+            if result.endswith("2"):
+                result += "_"
+            result += "2"
 
         elif n == "B" or n == "b":
-            result.append(22)
-            if n.next() == "A" or n.next() == "a" or n.next() == "C" or n.next() == "c":
-                result.append("_")
+            if result.endswith("2"):
+                result += "_"
+            result += "22"
 
         elif n == "C" or n == "c":
-            result.append(222)
-            if n.next() == "B" or n.next() == "b" or n.next() == "A" or n.next() == "a":
-                result.append("_")
+            if result.endswith("2"):
+                result += "_"
+            result += "222"
 
         elif n == "D" or n == "d":
-            result.append(3)
+            if result.endswith("3"):
+                result += "_"
+            result += "3"
 
         elif n == "E" or n == "e":
-            result.append(33)
+            if result.endswith("3"):
+                result += "_"
+            result += "33"
 
         elif n == "F" or n == "f":
-            result.append(333)
+            if result.endswith("3"):
+                result += "_"
+            result += "333"
 
         elif n == "G" or n == "g":
-            result.append(4)
+            if result.endswith("4"):
+                result += "_"
+            result += "4"
 
         elif n == "H" or n == "h":
-            result.append(44)
+            if result.endswith("4"):
+                result += "_"
+            result += "44"
 
         elif n == "I" or n == "i":
-            result.append(444)
+            if result.endswith("4"):
+                result += "_"
+            result += "444"
 
         elif n == "J" or n == "j":
-            result.append(5)
+            if result.endswith("5"):
+                result += "_"
+            result += "5"
 
         elif n == "K" or n == "k":
-            result.append(55)
+            if result.endswith("5"):
+                result += "_"
+            result += "55"
 
         elif n == "L" or n == "l":
-            result.append(555)
+            if result.endswith("5"):
+                result += "_"
+            result += "555"
 
         elif n == "M" or n == "m":
-            result.append(6)
+            if result.endswith("6"):
+                result += "_"
+            result += "6"
 
         elif n == "N" or n == "n":
-            result.append(66)
+            if result.endswith("6"):
+                result += "_"
+            result += "66"
 
         elif n == "O" or n == "o":
-            result.append(666)
+            if result.endswith("6"):
+                result += "_"
+            result += "666"
 
         elif n == "P" or n == "p":
-            result.append(7)
+            if result.endswith("7"):
+                result += "_"
+            result += "7"
 
         elif n == "Q" or n == "q":
-            result.append(77)
+            if result.endswith("7"):
+                result += "_"
+            result += "77"
 
         elif n == "R" or n == "r":
-            result.append(777)
+            if result.endswith("7"):
+                result += "_"
+            result += "777"
 
         elif n == "S" or n == "s":
-            result.append(7777)
+            if result.endswith("7"):
+                result += "_"
+            result += "7777"
 
         elif n == "T" or n == "t":
-            result.append(8)
+            if result.endswith("8"):
+                result += "_"
+            result += "8"
 
         elif n == "U" or n == "u":
-            result.append(88)
+            if result.endswith("8"):
+                result += "_"
+            result += "88"
 
         elif n == "V" or n == "v":
-            result.append(888)
+            if result.endswith("8"):
+                result += "_"
+            result += "888"
 
         elif n == "W" or n == "w":
-            result.append(9)
+            if result.endswith("9"):
+                result += "_"
+            result += "9"
 
         elif n == "X" or n == "x":
-            result.append(99)
+            if result.endswith("9"):
+                result += "_"
+            result += "99"
 
         elif n == "Y" or n == "y":
-            result.append(999)
+            if result.endswith("9"):
+                result += "_"
+            result += "999"
 
         elif n == "Z" or n == "z":
-            result.append(9999)
+            if result.endswith("9"):
+                result += "_"
+            result += "9999"
 
         elif n == " ":
-            result.append(0)
+            result += "0"
 
         print(result)
